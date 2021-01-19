@@ -103,5 +103,5 @@ def get_median(number_list):
     else:
         med_idx = length // 2 
     
-    median = number_list[med_idx]
+    median = number_list[int(med_idx)]
     return median
