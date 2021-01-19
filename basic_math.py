@@ -94,6 +94,8 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
+    number_list.sort()
+    
     length = len(number_list)
     if not length:
         return None
