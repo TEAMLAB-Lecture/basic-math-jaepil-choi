@@ -95,10 +95,13 @@ def get_median(number_list):
             35.5
     """
     length = len(number_list)
+    if not length:
+        return None
+    
     if length % 2 == 0:
-        med_idx = length / 2
+        med_idx = length / 2 - 1
     else:
-        med_idx = length // 2 + 1
+        med_idx = length // 2 
     
     median = number_list[med_idx]
     return median
